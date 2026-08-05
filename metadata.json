@@ -1,0 +1,6 @@
+{
+  "name": "IceStream — Real-Time Lakehouse Observability",
+  "description": "Enterprise-grade real-time lakehouse observability and data quality platform with Apache Kafka, Flink, Iceberg time travel, automated circuit breaker, DLQ quarantine, and intelligent remediation engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

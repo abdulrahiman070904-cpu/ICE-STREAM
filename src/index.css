@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #05080E;
+    color: #E2F1FD;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom scrollbars with Jet Black & Icy Blue palette */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090E17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E3A5F;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38BDF8;
+}
+
+/* React Flow Canvas overrides for Jet Black & Icy Blue */
+.react-flow__background {
+  background-color: #05080E !important;
+}
+
+.react-flow__controls {
+  box-shadow: 0 4px 20px rgba(0, 240, 255, 0.15) !important;
+  border: 1px solid rgba(56, 189, 248, 0.25) !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  background-color: #0B111E !important;
+}
+
+.react-flow__controls-button {
+  background-color: #0B111E !important;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.15) !important;
+  color: #38BDF8 !important;
+  fill: #38BDF8 !important;
+}
+
+.react-flow__controls-button:hover {
+  background-color: #132238 !important;
+  color: #67E8F9 !important;
+  fill: #67E8F9 !important;
+}
+
+.react-flow__minimap {
+  background-color: #090E17 !important;
+  border: 1px solid rgba(56, 189, 248, 0.25) !important;
+  border-radius: 12px !important;
+}
+

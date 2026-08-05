@@ -1,0 +1,5 @@
+apache-flink==1.18.1
+kafka-python==2.0.2
+pyiceberg[s3fs,pyarrow]==0.6.0
+pydantic==2.6.4
+requests==2.31.0

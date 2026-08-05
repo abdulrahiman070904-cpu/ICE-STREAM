@@ -1,0 +1,8 @@
+kafka-python==2.0.2
+pydantic==2.6.4
+requests==2.31.0
+python-dotenv==1.0.1
+pyiceberg[s3fs,pyarrow]==0.6.0
+great-expectations==0.18.12
+fastapi==0.110.0
+uvicorn==0.28.0

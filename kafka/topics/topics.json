@@ -1,0 +1,52 @@
+{
+  "topics": [
+    {
+      "name": "checkout-events",
+      "partitions": 3,
+      "replication_factor": 1,
+      "description": "Raw unvalidated e-commerce checkout telemetry stream from customer applications"
+    },
+    {
+      "name": "checkout-events-valid",
+      "partitions": 3,
+      "replication_factor": 1,
+      "description": "Validated checkout transactions ready for lakehouse Iceberg storage"
+    },
+    {
+      "name": "checkout-events-invalid",
+      "partitions": 3,
+      "replication_factor": 1,
+      "description": "Failed transactions identified during streaming validation"
+    },
+    {
+      "name": "checkout-events-dlq",
+      "partitions": 3,
+      "replication_factor": 1,
+      "description": "Dead letter queue holding quarantined records for inspection and remediation"
+    },
+    {
+      "name": "pipeline-events",
+      "partitions": 3,
+      "replication_factor": 1,
+      "description": "Pipeline operational telemetry, node statuses, and heartbeat events"
+    },
+    {
+      "name": "quality-alerts",
+      "partitions": 3,
+      "replication_factor": 1,
+      "description": "Circuit breaker trigger notices, anomaly alerts, and SLA violation notices"
+    },
+    {
+      "name": "remediation-events",
+      "partitions": 3,
+      "replication_factor": 1,
+      "description": "Automatic remediation life-cycle status transitions and recovery logs"
+    }
+  ],
+  "consumer_groups": [
+    "icestream-flink",
+    "icestream-quality",
+    "icestream-remediation",
+    "icestream-api"
+  ]
+}
